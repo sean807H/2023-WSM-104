@@ -1,3 +1,25 @@
-div {
+/* div {
     color: purple;
+} */
+
+/* 인라인>html파일의 style태그>id>.c>div>* */
+
+/* 전체선택자 */
+* {
+    color: red;
+}
+
+/* 태그선택자 */
+div {
+    color: blue;
+}
+
+/* 클래스 선택자 */
+.c {
+    color: pink;
+}
+
+/* id 선택자 */
+#i {
+    color: green;
 }
