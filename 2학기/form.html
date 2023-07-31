@@ -6,12 +6,18 @@
 </head>
 <body>
     <form action="서버홈페이지">
-        아이디
+        
+        <!-- for 속성에 id값을 매칭시켜서 <input>과 의미적으로 연결 -->
+        <label for="DK">아이디</label>
+
         <!-- 텍스트 정보를 담을 수 있는 공간 -->
-        <input type="text">
-        패스워드
+        <!-- <input>은 기본적으로 줄바꿈을 하지않는다 -->
+        <input type="text" id="DK">
+
+        <label for="dk_is_dokyeom">패스워드</label>
         <!-- 비밀번호 정보를 담을 수 있는 공간 -->
-        <input type="password">
+        <input type="password" id="dk_is_dokyeom">
+        
         <!-- 입력 정보들을 서버에 전송해주는 버튼 -->
         <input type="submit" value="로그인">
     </form>
