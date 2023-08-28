@@ -1,0 +1,92 @@
+#signup-form {
+    /* 요소를 아예 사라지게 함 */
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 600px;
+    /* 가운데 정렬 */
+    margin: auto;
+    padding: 50px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #b38bff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: black;
+}
+
+button {
+    padding: 10px;
+    background-color: #b38bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    /* 이벤트 발생했을 때 style변화를 자연스럽게 */
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #8c5fb2;
+}
+
+a {
+    color: #b38bff;
+    /* 밑줄 제거 */
+    text-decoration: none;
+    font-size: 16px;
+    /* 이벤트 발생했을 때 style변화를 자연스럽게 */
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #8c5fb2;
+}
+
+p {
+    text-align: center;
+    margin: 8px;
+}
