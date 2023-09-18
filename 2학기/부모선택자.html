@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>부모선택자</title>
+    <style>
+        /* 부모는 조부모의 직계자식이라 적용 */
+        .a > .b {
+            border: 1px black solid;
+        }
+        /* 자식은 조부모의 직계자식이 아니라 적용X */
+        .a >.c {
+            border: 1px black solid;
+            margin-top: 20px;
+        }
+        /* 자식은 조부모의 자식의 자식이라 적용(띄어쓰기) */
+        .a .c {
+            border: 1px red solid;
+            margin-left: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="a">조부모
+        <div class="b">부모
+            <div class="c">자식</div>
+        </div>
+    </div>
+</body>
+</html>
