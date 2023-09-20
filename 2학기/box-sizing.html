@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>box-sizing</title>
+    <style>
+        div {
+            /* solid 실선 */
+            border: 1px black solid;
+            width: 200px;
+            height: 100px;
+            /* content-box를 하면 전체너비는 = width+양옆패딩+양옆보더 */
+            /* a크기의 박스를 b와 라인을 맞춰줌 */
+            /* border-box를 하면 박스의 전체 너비가 width(200)으로 고정됨 */
+            box-sizing: border-box;
+        }
+        .a {
+            padding: 20px;
+        }
+        .b {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.a 는 class/div#a 는 id -->
+    <div class="a"></div>
+    <div class="b"></div>
+</body>
+</html>
